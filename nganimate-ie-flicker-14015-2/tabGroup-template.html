@@ -1,0 +1,13 @@
+<div class="border1 tabGroup outerContainer">
+  <div class="border2 headerContainer">
+    <ul ng-transclude></ul>
+  </div>
+  <div class="border2 pageContainer">
+    <!-- <div class="border3 tabPage animate-me" ng-repeat="tab in tabs" tab-content-transclude="tab" ng-show="tab.active === true"></div> -->
+<!--     <div class="border3 tabPage animate-me" ng-repeat="tab in tabs">
+     <div class="animate-me" tab-content-transclude="tab" ng-show="tab.active === true"></div>
+    </div> -->
+    <div class="border3 tabPage animate-me" id="blue" tab-content-transclude="tabs[0]" ng-show="tabs[0].active === true"></div>
+    <div class="border3 tabPage animate-me" id="red" tab-content-transclude="tabs[1]" ng-show="tabs[1].active === true"></div>
+  </div>
+</div>

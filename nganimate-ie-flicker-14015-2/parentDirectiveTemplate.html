@@ -1,0 +1,15 @@
+<div class="cx-flex-fill cx-flex-col parentDirectiveContainer">
+  <div class="cx-flex-fill corruptionStatsTabPanelContainer impairmentsTabPanelContainer cxt-impairmentsTabPanelContainer">
+    <tab-group>
+<!--       <my-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable-me="tab.disabled" select="tabSelected">
+        <div class="cx-flex-row tabPageContainer" ng-include="tab.pageUrl"></div>
+      </my-tab> -->
+      <my-tab heading="Port" active="tabs[0].active" disable-me="tabs[0].disabled" select="tabSelected">
+        <div class="cx-flex-row tabPageContainer cx-debug-blue"> blue</div>
+      </my-tab>
+      <my-tab heading="Profile" active="tabs[1].active" disable-me="tabs[1].disabled" select="tabSelected">
+        <div class="cx-flex-row tabPageContainer cx-debug-red" > red</div>
+      </my-tab>
+    </tab-group>
+  </div>
+</div>

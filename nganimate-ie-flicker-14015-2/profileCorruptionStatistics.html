@@ -1,0 +1,139 @@
+<div class="cx-flex-fill cx-flex-col profileCorruptionStatistics cxt-profileCorruptionStatistics cx-debug-blue">
+    <div class="cx-flex-fill cx-flex-row">
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="information-text" ng-show="profile.port === 'Port1'">Profile {{profile.position}} (Port 1):</div>
+        <div class="information-text" ng-show="profile.port === 'Port2'">Profile {{profile.position}} (Port 2):</div>
+    </div>
+    <div class="cx-flex-fill cx-flex-row cx-flex-align-center">
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fixed-em-9"></div>
+        <div class="cx-flex-fixed-em-half"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-justify-center">Errored Packets</div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-justify-center">Lost Packets</div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-justify-center">Misordered Packets</div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-justify-center">Repeated Packets</div>
+        <div class="cx-flex-fixed-em-1"></div>
+    </div>
+    <div class="cx-flex-fixed-em-quarter"></div>
+    <div class="cx-flex-fill cx-flex-row">
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fixed-em-9 cx-flex-row cx-flex-align-center">Status:</div>
+        <div class="cx-flex-fixed-em-half"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="profileStats && profileStats.errored" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="profileStats && profileStats.lost" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="profileStats && profileStats.misordered" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="profileStats && profileStats.repeated" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+    </div>
+    <div class="cx-flex-fixed-em-quarter"></div>
+    <div class="cx-flex-fill cx-flex-row">
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fixed-em-9 cx-flex-row cx-flex-align-center">Type:</div>
+        <div class="cx-flex-fixed-em-half"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="profileStats && profileStats.errored && profileStats.errored.enabled === true" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="profileStats && profileStats.lost && profileStats.lost.enabled === true" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="profileStats && profileStats.misordered && profileStats.misordered.enabled === true" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="profileStats && profileStats.repeated && profileStats.repeated.enabled === true" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+    </div>
+    <div class="cx-flex-fixed-em-quarter"></div>
+    <div class="cx-flex-fill cx-flex-row">
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fixed-em-9 cx-flex-row cx-flex-align-center">Periodicity:</div>
+        <div class="cx-flex-fixed-em-half"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="profileStats && profileStats.errored && profileStats.errored.enabled === true && profileStats.errored.type === 'Rate'" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="profileStats && profileStats.lost && profileStats.lost.enabled === true && profileStats.lost.type === 'Rate'" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="profileStats && profileStats.misordered && profileStats.misordered.enabled === true && profileStats.misordered.type === 'Rate'" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="profileStats && profileStats.repeated && profileStats.repeated.enabled === true && profileStats.repeated.type === 'Rate'" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+    </div>
+    <div class="cx-flex-fixed-em-quarter"></div>
+    <div class="cx-flex-fill cx-flex-row"></div>
+    <div class="cx-flex-fixed-em-quarter"></div>
+    <div class="cx-flex-fill-half cx-flex-row"></div>
+    <div class="cx-flex-fixed-em-quarter"></div>
+    <div class="cx-flex-fill cx-flex-row">
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fixed-em-9 cx-flex-row cx-flex-align-center">Total Packets:</div>
+        <div class="cx-flex-fixed-em-half"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="portStats && portStats.profile && portStats.profile[profile.position]" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="portStats && portStats.profile && portStats.profile[profile.position]" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="portStats && portStats.profile && portStats.profile[profile.position]" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="portStats && portStats.profile && portStats.profile[profile.position]" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+    </div>
+    <div class="cx-flex-fixed-em-quarter"></div>
+    <div class="cx-flex-fill cx-flex-row">
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fixed-em-9 cx-flex-row cx-flex-align-center">Impaired Packets:</div>
+        <div class="cx-flex-fixed-em-half"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="portStats && portStats.profile && portStats.profile[profile.position]" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="portStats && portStats.profile && portStats.profile[profile.position]" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="portStats && portStats.profile && portStats.profile[profile.position]" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+            <div ng-hide="portStats && portStats.profile && portStats.profile[profile.position]" class="value-container">---</div>
+        </div>
+        <div class="cx-flex-fixed-em-1"></div>
+    </div>
+    <div class="cx-flex-fixed-em-1"></div>
+    <div class="cx-flex-fill cx-flex-row">
+        <div class="cx-flex-fixed-em-1"></div>
+        <div class="information-text">Click on a profile below to view statistics for that profile.</div>
+    </div>
+</div>

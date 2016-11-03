@@ -1,0 +1,64 @@
+.parentDirectiveContainer {
+  padding: 15px;
+}
+
+.corruptionStatsTabPanelContainer {
+    position:relative;
+}
+
+.corruptionStatsTabPanelContainer .tabPageContainer {
+    position:absolute;
+    width:100%;
+    height:100%;
+
+    padding: 5px;
+}
+
+.corruptionStatsTabPanelContainer .tabGroup .tabPage {
+    background-color: inherit;
+}
+
+.corruptionStatsTabPanelContainer .tabGroup ul li {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.impairmentsTabPanelContainer .tabGroup ul li {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    margin-right: 1px;
+}
+
+.impairmentsTabPanelContainer .tabGroup ul li.active {
+    margin-bottom: 0;
+}
+
+.impairmentsTabPanelContainer .tabGroup .pageContainer {
+    margin-top: 1px;
+}
+
+
+/* we have diffrent themed css hence this seperation */
+.cxt-impairmentsTabPanelContainer .tabGroup .pageContainer {
+    border:1px solid #777;
+}
+
+/* Inactive tab background and text coloring */
+.cxt-impairmentsTabPanelContainer .tabGroup ul li {
+    background-color:#777;
+    border: 1px solid #777;
+}
+
+.cxt-impairmentsTabPanelContainer .tabGroup ul li a {
+    color: #D4D4D4;
+}
+
+/* Active tab background and text coloring */
+.cxt-impairmentsTabPanelContainer .tabGroup ul li.active {
+    background-color: #0066FF;
+    border: 1px solid #0066FF;
+}
+
+.cxt-impairmentsTabPanelContainer .tabGroup ul li a.active {
+    color: white;
+}

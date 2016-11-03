@@ -1,0 +1,127 @@
+<div class="cx-flex-fill cx-flex-col cx-overflow-hidden portCorruptionStatistics cx-debug-red">
+    <div class="cx-flex-fill cx-flex-col">
+        <div class="cx-flex-fill cx-flex-row">
+            <div class="cx-flex-fixed-em-12 cxt-text-colour-3 cx-flex-row">Port1</div>
+            <div class="cx-flex-fill cx-flex-row"></div>
+            <div class="cx-flex-fixed-em-6 cx-flex-row"></div>
+            <div class="cx-flex-fixed-em-12 cxt-text-colour-3 cx-flex-row">Port2</div>
+            <div class="cx-flex-fill cx-flex-row"></div>
+        </div>
+        <div class="cx-flex-fixed-em-half"></div>
+        <div class="cx-flex-fixed-em-quarter"></div>
+        <div class="cx-flex-fill cx-flex-row">
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">TX Symbol Errors:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+                <div ng-show="stats && stats.port1" class="value-container allow_text_selection">{{stats.port1.totalErroredSymbolCount | number}}</div>
+            </div>
+            <div class="cx-flex-fixed-em-6 cx-flex-row"></div>
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">TX Symbol Errors:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+                <div ng-show="stats && stats.port2" class="value-container allow_text_selection">{{stats.port2.totalErroredSymbolCount | number}}</div>
+            </div>
+        </div>
+        <div class="cx-flex-fixed-px-2"></div>
+        <div class="cx-flex-fill cx-flex-row">
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Symbols:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+                <div ng-show="stats && stats.port1" class="value-container allow_text_selection">{{stats.port1.totalSymbolCount | number}}</div>
+            </div>
+            <div class="cx-flex-fixed-em-6 cx-flex-row"></div>
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Symbols:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+                <div ng-show="stats && stats.port2" class="value-container allow_text_selection">{{stats.port2.totalSymbolCount | number}}</div>
+            </div>
+        </div>
+        <div class="cx-flex-fixed-em-half"></div>
+        <div class="cx-flex-fixed-em-quarter"></div>
+        <div class="cx-flex-fill cx-flex-row">
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Errored Packets:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field" cal-qh="AtteroPortCorruptionStatistics.ctrl_1">
+                <div ng-show="stats && stats.port1" class="value-container allow_text_selection">{{stats.port1.totalErroredPackets | number}}</div>
+            </div>
+            <div class="cx-flex-fixed-em-6 cx-flex-row"></div>
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Errored Packets:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field" cal-qh="AtteroPortCorruptionStatistics.ctrl_2">
+                <div ng-show="stats && stats.port2" class="value-container allow_text_selection">{{stats.port2.totalErroredPackets | number}}</div>
+            </div>
+        </div>
+        <div class="cx-flex-fixed-px-2"></div>
+        <div class="cx-flex-fill cx-flex-row">
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Lost Packets:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+                <div ng-show="stats && stats.port1" class="value-container allow_text_selection">{{stats.port1.totalLostPackets | number}}</div>
+            </div>
+            <div class="cx-flex-fixed-em-6 cx-flex-row"></div>
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Lost Packets:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+                <div ng-show="stats && stats.port2" class="value-container allow_text_selection">{{stats.port2.totalLostPackets | number}}</div>
+            </div>
+        </div>
+        <div class="cx-flex-fixed-px-2"></div>
+        <div class="cx-flex-fill cx-flex-row">
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Misordered Packets:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+                <div ng-show="stats && stats.port1" class="value-container allow_text_selection">{{stats.port1.totalMisorderedPackets | number}}</div>
+            </div>
+            <div class="cx-flex-fixed-em-6 cx-flex-row"></div>
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Misordered Packets:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+                <div ng-show="stats && stats.port2" class="value-container allow_text_selection">{{stats.port2.totalMisorderedPackets | number}}</div>
+            </div>
+        </div>
+        <div class="cx-flex-fixed-px-2"></div>
+        <div class="cx-flex-fill cx-flex-row">
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Repeated Packets:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+                <div ng-show="stats && stats.port1" class="value-container allow_text_selection">{{stats.port1.totalRepeatedPackets | number}}</div>
+            </div>
+            <div class="cx-flex-fixed-em-6 cx-flex-row"></div>
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Repeated Packets:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field">
+                <div ng-show="stats && stats.port2" class="value-container allow_text_selection">{{stats.port2.totalRepeatedPackets | number}}</div>
+            </div>
+        </div>
+        <div class="cx-flex-fixed-em-half"></div>
+        <div class="cx-flex-fixed-em-quarter"></div>
+        <div class="cx-flex-fill cx-flex-row">
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Packets:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field" cal-qh="AtteroPortCorruptionStatistics.ctrl_3">
+                <div ng-show="stats && stats.port1" class="value-container allow_text_selection">{{stats.port1.totalPackets | number}}</div>
+            </div>
+            <div class="cx-flex-fixed-em-6 cx-flex-row"></div>
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Packets:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field" cal-qh="AtteroPortCorruptionStatistics.ctrl_4">
+                <div ng-show="stats && stats.port2" class="value-container allow_text_selection">{{stats.port2.totalPackets | number}}</div>
+            </div>
+        </div>
+        <div class="cx-flex-fixed-px-2"></div>
+        <div class="cx-flex-fill cx-flex-row">
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Impaired Packets:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field" cal-qh="AtteroPortCorruptionStatistics.ctrl_5">
+                <div ng-show="stats && stats.port1" class="value-container allow_text_selection">{{stats.port1.totalImpairedPackets | number}}</div>
+            </div>
+            <div class="cx-flex-fixed-em-6 cx-flex-row"></div>
+            <div class="cx-flex-fixed-em-12 cx-flex-align-center cx-flex-row">Total Impaired Packets:</div>
+            <div class="cx-flex-fixed-em-half"></div>
+            <div class="cx-flex-fill cx-flex-row cx-flex-align-center cx-flex-justify-end cxt-statistics-field" cal-qh="AtteroPortCorruptionStatistics.ctrl_6">
+                <div ng-show="stats && stats.port2" class="value-container allow_text_selection">{{stats.port2.totalImpairedPackets | number}}</div>
+            </div>
+        </div>
+        <div class="cx-flex-fill cx-flex-row"></div>
+    </div>
+</div>

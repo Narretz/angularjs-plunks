@@ -1,0 +1,22 @@
+.profileCorruptionStatistics {
+
+}
+
+.portCorruptionStatistics {
+    padding: 0em 1em;
+}
+
+.profileCorruptionStatistics .value-container,
+.portCorruptionStatistics .value-container {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.cxt-profileCorruptionStatistics .information-text {
+    color: yellow;
+}
+
+.cxt-statistics-field {
+    background-color: black;
+    color: #0099FF;
+}
